@@ -1,0 +1,131 @@
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  .form-control-dark {
+    color: #fff;
+    background-color: var(--bs-dark);
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    color: #fff;
+    background-color: var(--bs-dark);
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+  
+  .text-small {
+    font-size: 85%;
+  }
+  
+  .dropdown-toggle {
+    outline: 0;
+  }
+  
+  /*
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  */
+  /* Base carousel styles (mostly from Bootstrap) */
+  
+  /* Base carousel styles (mostly from Bootstrap) */
+  .carousel {
+    position: relative;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;  /* Adjust height as needed */
+  }
+  
+  .carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-to-right: -100%;
+    background-color: #eee;  /* Set default background color */
+  }
+  
+  .carousel-item.active {
+    display: block;
+    min-height: 100vh;  /* Adjust height as needed */
+  }
+  
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100vh;
+    backface-visibility: hidden;
+    background-size: cover;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: unset;  /* Adjust caption positioning if needed */
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    color: #fff;
+    font-size: 30px;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    background: none;
+  }
+  
+  .carousel:hover .carousel-control-prev,
+  .carousel:hover .carousel-control-next {
+    opacity: 1;
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
+  
+  /* Optional customizations */
+  
+  .carousel-wrap {  /* Adjust carousel container styles */
+    overflow: hidden;
+  }
+  
+  .carousel-item img {  /* Customize image styles */
+    filter: brightness(0.8);  /* Adjust image brightness */
+  }
+  
+  .carousel-caption {  /* Customize caption styles */
+    background-color: rgba(0, 0, 0, 0.5);  /* Add semi-transparent background */
+    font-size: 1.2rem;  /* Adjust caption font size */
+  }
+  
